@@ -1,0 +1,27 @@
+:host {
+  max-width: 1240px;
+  display: block;
+  margin: 20px auto;
+}
+.left, .right {
+  float: left;
+  width: 610px;
+  margin: 20px 0;
+}
+.left {
+  margin-right: 10px;
+}
+.right {
+  margin-left: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  width: 90%;
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 20px 0;
+}

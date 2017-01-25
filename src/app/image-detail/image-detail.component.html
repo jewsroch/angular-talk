@@ -1,0 +1,20 @@
+<div class="left">
+  <img src="{{image.images.standard_resolution.url}}" alt="{{image.caption.text}}">
+</div>
+
+<div class="right">
+  <ul>
+    <li><strong>Caption:</strong> {{image.caption.text}}</li>
+    <li *ngIf="image.tags.length > 0" >
+      <strong>Tags:</strong> #{{image.tags.join(", #")}}
+    </li>
+    <li><strong>Date:</strong> {{image.created_time * 1000 | date}}</li>
+    <li><strong>Likes:</strong> {{image.likes.count}}</li>
+    <li>
+      <a href="#" (click)="onStar(image.id); false">
+        <app-star-icon [isActive]="image.starred"></app-star-icon>
+      </a>
+    </li>
+  </ul>
+
+</div>

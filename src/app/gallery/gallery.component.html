@@ -1,0 +1,6 @@
+<span class="image" *ngFor="let image of images; let imageIndex = index">
+  <a href="#" (click)="onSelectImage(imageIndex); false">
+    <img src="{{image.images.thumbnail.url}}" alt="{{image.caption.text}}">
+    <app-star-icon *ngIf="image.starred" [isActive]="true" ></app-star-icon>
+  </a>
+</span>

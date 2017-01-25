@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  margin: 0 auto;
+  max-width: 950px;
+}
+.image {
+  position: relative;
+  float: left;
+  margin: 20px;
+}
+
+/deep/ img {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+}
+
+a:hover img, a:hover app-star-icon {
+  transform: scale(.98);
+}
+
+app-star-icon {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}

@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  margin: 20px auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #333;
+}
