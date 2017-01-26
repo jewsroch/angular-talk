@@ -10,11 +10,14 @@
     </li>
     <li><strong>Date:</strong> {{image.created_time * 1000 | date}}</li>
     <li><strong>Likes:</strong> {{image.likes.count}}</li>
+    <li><strong>Description:</strong> {{model.description}}</li>
+    <li>
+      <textarea [(ngModel)]="model.description" cols="50" rows="10"></textarea>
+    </li>
     <li>
       <a href="#" (click)="onStar(image.id); false">
         <app-star-icon [isActive]="image.starred"></app-star-icon>
       </a>
     </li>
   </ul>
-
 </div>
