@@ -1,12 +1,25 @@
 <div class="container">
 
+  <!-- Inline usage of a component property. -->
   <h1>{{title}}</h1>
 
+  <!--
+    Bracked [] properties are @Inputs on the component.
+    The right-hand value of an Angular Directive like this
+    is a javascript variable, not a string
+
+    Properties with parens () are @Outputs from the component and
+    give access to events that have been 'emmitted' from within that component.
+  -->
   <app-gallery
     [images]="images"
     (selectImage)="onImageSelection($event)">
   </app-gallery>
 
+  <!--
+    Angular provides a number of built in directives to affect the template and content.
+    *ngIf, *ngFor, *ngSwitch, etc...
+  -->
   <app-image-detail
     *ngIf="selectedImage"
     [image]="selectedImage"

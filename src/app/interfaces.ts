@@ -1,7 +1,9 @@
 export interface ImageResource {
+  id: string;
   images: ImageTypes;
   caption: Caption;
   tags: string[];
+  starred?: boolean;
 }
 
 interface ImageTypes {

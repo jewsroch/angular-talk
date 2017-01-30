@@ -10,16 +10,16 @@ import { ImageDetailComponent } from './image-detail/image-detail.component';
 import { StarIconComponent } from './shared/star-icon-component';
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule
+  ],
   declarations: [
     AppComponent,
     GalleryComponent,
     ImageDetailComponent,
     StarIconComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
   ],
   providers: [InstagramService],
   bootstrap: [AppComponent]

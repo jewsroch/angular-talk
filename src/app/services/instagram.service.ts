@@ -8,11 +8,9 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class InstagramService {
-  private url: string;
+  private url: string = '/api';
 
-  constructor(private http: Http) {
-    this.url = '/api';
-  }
+  constructor(private http: Http) { }
 
   fetch(): Observable<any> {
     return this.http.get(this.url)

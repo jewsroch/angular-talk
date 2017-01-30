@@ -1,5 +1,20 @@
 # AngularTalk
 
+This is a small demo app for a talk given at the Santa Cruz JavaScript meetup in January 2016.
+The slides for the talk can be found [here](https://slides.com/chadjewsbury/angular-2/).
+
+
+The demo was meant to showcase the overall structure of an Angular 2 application: NgModules, Components, Services, etc.
+It was not meant to be a fully functioning application, so don't expect it to actually do much. :)
+
+
+The demo uses the Instagram api to grab all the recent images from an authenticated user.
+To set the app up, you'll need an Instagram oauth token. Edit the `proxy.config.example.json` file to include your token, then rename the file `proxy.config.json`.
+The application uses this file to proxy the api requests to the instagram API and avoid cross-domain request errors.
+
+Other than that set up and running `npm install`, you should be able to follow the instructions below to get up and running.
+
+## CLI Readme -------------------------------------
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
 ## Development server
